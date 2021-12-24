@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <title>About Me</title>
+  <link rel="icon" href="/photos/aboutme.png">
+</head>
+
+<body>
+  <script id="replace_with_header" src="header.js" name="about"></script>
+  <div id="content">
+    <h2 id="title" class="text-center fancy" sytle="padding-bottom:15px"> About Me
+      <small class="text-muted">Einat Sidi</small>
+    </h2>
+
+    <div class="navigation card">
+      <div class="card-body" style="padding-bottom: 0%;">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href='#education'>Education</a>
+          </li>
+          <li class="list-inline-item">|</li>
+          <li class="list-inline-item">
+            <a href="#employment">Employment</a>
+          </li>
+          <li class="list-inline-item">|</li>
+          <li class="list-inline-item">
+            <a href="#favorite-song">Favorite Song</a>
+          </li>
+          <li class="list-inline-item">|</li>
+          <li class="list-inline-item">
+            <a href="#hobbies">Hobbies</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" id="me">
+      <div class="card-body">
+        <p> Hi, my name is Einat Sidi. I'm 25 years old, and originally from Mazkeret Batya.
+          <br />
+          Last summer I moved to Herzliya with my boyfriend, in order to get closer to Campus.
+          <br />
+          We have two beautiful cats, as you will see in the photo section.
+        </p>
+      </div>
+    </div>
+
+    <div class="card" id="education">
+      <div class="card-body">
+        <h4 style="font:900">Education</h4>
+        <hr style="width: 90%;" />
+        <p>
+          <strong style="font-size: larger; padding-right: 10px;">High-School</strong> Branco-Weiss high school,
+          Mazkeret Batya. Majored in Physics and Music.
+          <br />
+          <strong style="font-size: larger; padding-right: 10px;">University</strong>
+          Double Major in Computer Science and Entrepreneurship, Reichman University.
+        </p>
+      </div>
+    </div>
+
+    <div class="card" id="employment">
+      <div class="card-body">
+        <h4 style="font:900">Employment</h4>
+        <hr style="width: 90%;" />
+        <p>After high-school Worked as a hostess at 'Humongous' restaurant</p>
+      </div>
+    </div>
+
+    <div class="card" id="favorite-song">
+      <div class="card-body">
+        <h4 style="font:900">My favorite song</h4>
+        <hr style="width: 90%;" />
+        <strong>Try to guess my favorite song!</strong>
+        <p>Press play to hear a short audio, and type your guess! </p>
+        <img role="button" id="play-button" src="/photos/play.png.crdownload" alt="play" onclick="play()" />
+        <p>If your'e having trouble, don't worry, you can get a hint! Just press on the 'Hint' button below</p>
+
+        <div id="guess-box">
+          <input class="form-control" list="songs" id="guess" placeholder="Type here"
+            style="display:inline; background: rgba(255, 255, 255, 0.534)" ;>
+          <datalist class="songs" id=songs>
+            <option value="Smells Like Teen Spirit - Nirvana"></option><option value="Imagine - John Lennon"></option><option value="Billie Jean - Michael Jackson"></option><option value="Bohemian Rhapsody - Queen"></option><option value="Hey Jude - The Beatles"></option><option value="Like A Rolling Stone - Bob Dylan"></option><option value="I Can't Get No Satisfaction - Rolling Stones"></option><option value="Sweet Child O'Mine - Guns N' Roses"></option><option value="November rain - Guns N' Roses" id="correct"></option><option value="Hotel California - The Eagles"></option><option value="Your Song - Elton John"></option><option value="Stairway To Heaven - Led Zeppelin"></option><option value="The Twist - Chubby Checker"></option><option value="Live Forever - Oasis"></option><option value="I Will Always Love You - Whitney Houston"></option><option value="Life On Mars? - David Bowie"></option><option value="Creep - Radiohead"></option><option value="Bridge Over Troubled Water - Simon & Garfunkel"></option><option value="Respect - Aretha Franklin"></option><option value="Family Affair - Sly And The Family Stone"></option><option value="Dancing Queen - ABBA"></option><option value="Good Vibrations - The Beach Boys"></option><option value="Purple Haze - Jimi Hendrix"></option><option value="Yesterday - The Beatles"></option><option value="Jonny B Good - Chuck Berry"></option><option value="No Woman No Cry - Bob Marley"></option><option value="Hallelujah - Jeff Buckley"></option><option value="Every Breath You Take - The Police"></option><option value="A Day In The Life - The Beatles"></option><option value="Stand By Me - Ben E King"></option><option value="Gimme Shelter - The Rolling Stones"></option><option value="Sultans Of Swing - Dire Straits"></option>
+          </datalist>
+          <a type="button" onclick="check()" style="font-size: 30px;">
+            &#10147
+          </a>
+          </div>
+          <div class="accordion accordion-flush" id="favorite-song-hint">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" id="acc-button" type="button"
+                style="background-color: rgba(255, 255, 255, 0.534);">
+                Hint
+              </button>
+            </h2>
+            <p id="hint"> It is a song by Guns N' Roses</p>
+          </div>
+          </div>
+          </div>
+          
+          <div class="card" id="hobbies">
+            <div class="card-body">
+              <h4 style="font:900">Hobbies</h4>
+              <hr style="width: 90%;" />
+              <p style="font-size: larger;">Some of my favorite things to do are:</p>
+              <ul>
+                <li>Sleeping</li>
+                <li>Watching TV</li>
+                <li>Eating</li>
+                <li>Hanging out with my friends</li>
+                <li>Singing</li>
+              </ul>
+            </div>
+          </div>
+          </div>
+          
+          <script id="replace_with_footer" src="footer.js"></script>
+          <script src="app.js"></script>
+          </body>
+          
+          </html>
