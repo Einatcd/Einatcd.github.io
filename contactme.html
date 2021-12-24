@@ -35,30 +35,30 @@
         <div class="card">
             <div class="card-body">
                 <form class="was-validated" action="https://formspree.io/f/xoqrvqvw" id="contact-form" method="POST" enctype="text/plain" target="_top">
-                  <div class="row">
-            <div class="col">
-                <div class="mb-3">
-                    <label class="form-label">First name</label>
+                  <div class="row" name="row">
+            <div class="col" name="col">
+                <div class="mb-3" name="fdiv1">
+                    <label class="form-label" name="fname-label">First name</label>
                     <input type="text" class="form-control is-invalid" name="First-name" id="first-name" placeholder="Einat" required pattern="[A-Za-z]+" required minlength="2">
                 </div>
                 </div>
-            <div class="col">
-                <div class="mb-3">
-                    <label class="form-label">Last name</label>
+            <div class="col" name="col">
+                <div class="mb-3" name="fdiv2">
+                    <label class="form-label" name="lname-label">Last name</label>
                     <input type="text" class="form-control is-invalid" name="Last-name" id="last-name" placeholder="Sidi" required minlength="2" pattern="[A-Za-z]+">
                   </div>
                 </div>
           </div>
-          <div class="mb-3">
-            <label class="form-label">Email address</label>
+          <div class="mb-3" name="fdiv3">
+            <label class="form-label" name="email-label">Email address</label>
             <input type="email" class="form-control is-invalid" id="email" name="Email" placeholder="name@example.com" required minlength="5">
           </div>
-          <div class="mb-3">
-            <label for="message" class="form-label"></label>
+          <div class="mb-3" name="fdiv4">
+            <label for="message" name="ms-label" class="form-label"></label>
             <textarea class="form-control is-invalid" id="message" rows="5" name="Message" placeholder="Write your message here.." required></textarea>
           </div>
-          <div id="submit-button" class="mb-3">
-                <button id="sub-button"  type="submit" class="btn btn-primary disabled" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Submit</button>
+          <div id="submit-button" class="mb-3" name="fdiv5">
+                <button id="sub-button"  type="submit" name="sub-button" class="btn btn-primary disabled" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Submit</button>
             </div>
         
         </form>
