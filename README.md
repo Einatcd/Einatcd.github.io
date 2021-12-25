@@ -82,7 +82,7 @@ By this code:
       height: 100%;
     }
   }
-  ```
+```
 # About Me
 In this page you'll find my information, devided by sections.  
 I added a navigation option to help you find the section your'e looking for:
